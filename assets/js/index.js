@@ -24,7 +24,6 @@ function getdata() {
 
 function touxiang(user) {
     var name = user.nickname || user.username
-    console.log(user);
     $('#welcome').html('欢迎&nbsp;' + name)
     if (user.user_pic != null) {
         $('.layui-nav-img').attr('src', user.user_pic).show();
